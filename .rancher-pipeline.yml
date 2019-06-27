@@ -1,0 +1,8 @@
+stages:
+- name: build
+  steps:
+  - runScriptConfig:
+      image: python:latest
+      shellScript: pwd; ls -la;
+timeout: 60
+notification: {}
